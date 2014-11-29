@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "text_to_slavoj_zizek",
+	"version": "0.1",
+	"description": "Replaces text with something a little more Zizek",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
